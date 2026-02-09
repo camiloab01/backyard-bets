@@ -1,0 +1,9 @@
+{
+  "name": "shared",
+  "version": "0.1.0",
+  "description": "Shared types between frontend and contracts",
+  "main": "types.ts",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

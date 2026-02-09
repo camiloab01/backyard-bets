@@ -1,0 +1,16 @@
+{
+  "name": "oracle-contract",
+  "version": "0.1.0",
+  "description": "Oracle contract for Backyard Bets on NEAR",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "near-sdk-js build src/index.ts build/oracle.wasm package.json tsconfig.json",
+    "build:verbose": "near-sdk-js build src/index.ts build/oracle.wasm package.json tsconfig.json --verbose true"
+  },
+  "dependencies": {
+    "near-sdk-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

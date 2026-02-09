@@ -1,0 +1,16 @@
+{
+  "name": "backyard-bets-contract",
+  "version": "0.1.0",
+  "description": "Backyard Bets smart contract on NEAR",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "near-sdk-js build src/index.ts build/backyard-bets.wasm package.json tsconfig.json",
+    "build:verbose": "near-sdk-js build src/index.ts build/backyard-bets.wasm package.json tsconfig.json --verbose true"
+  },
+  "dependencies": {
+    "near-sdk-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

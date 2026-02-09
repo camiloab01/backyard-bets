@@ -1,0 +1,21 @@
+{
+  "name": "backyard-bets",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "contracts/*",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "build:contracts": "npm run build --workspace=contracts/backyard-bets && npm run build --workspace=contracts/oracle",
+    "deploy:contracts": "bash scripts/deploy.sh",
+    "test:flow": "bash scripts/test-flow.sh"
+  },
+  "devDependencies": {
+    "near-cli": "^4.0.13",
+    "typescript": "^5.3.3"
+  }
+}
